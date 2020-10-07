@@ -63,3 +63,8 @@ mecablib = shared_library(
   include_directories : config_inc,
   dependencies : thread_dep,
 )
+
+mecab_dep = declare_dependency(
+  include_directories : include_directories('.'),
+  link_with : mecablib,
+)
