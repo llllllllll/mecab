@@ -1,0 +1,8 @@
+option('utf8-only', type : 'boolean', value : false, description : 'use utf8 only')
+option(
+  'charset',
+  type : 'combo',
+  choices : ['euc', 'sjis', 'utf8'],
+  value : 'euc',
+  description : 'set default charset',
+)
